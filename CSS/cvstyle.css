@@ -1,0 +1,574 @@
+html {
+	background-image: url('../img/darkBluePolygon1.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	
+}
+
+* {
+	font-family: Verdana, sans-serif;
+}
+
+
+
+
+#profilimg {
+	margin-left: 25px;
+	margin-top: 12px;
+	width: 12.5em; /*width: 12.7em*/
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	box-shadow: -0px 0px 7px 7px rgb(144, 226, 246, 0.7);
+	transition: transform .3s;
+	float: left; 
+	position: relative;	
+}
+
+#profilimg:hover {
+	transform: translateX(4em) translateY(4em) scaleX(1.5) scaleY(1.5);
+	z-index: 7;
+	opacity: 0.99;
+}
+
+header {
+	margin-left: 13%;
+	margin-top: 10px;
+	width: 85%;
+	height: 17em;
+	box-shadow: -0px 0px 7px 7px rgb(144, 226, 246, 0.7);
+	text-align: left;
+	float: left;
+	background-color: #336666;
+	opacity: 0.8;
+	z-index: -1;
+	border-top-left-radius: 100px 400px;
+	border-top-right-radius: 100px 400px; 
+	border-bottom-right-radius: 100px 400px;
+	border-bottom-left-radius: 100px 400px;
+	position: fixed;
+	font-size: 12px;
+}
+
+header h2{
+	color: ghostwhite;
+	margin-left: 2em;
+	margin-top:	1em;
+	z-index: 6;
+	font-weight: bold;
+}
+
+html body header p {
+	color: ghostwhite;
+	margin-left: 2.5em;
+}
+
+
+aside {
+	float: left;
+	margin-top: 252px;
+	margin-left: 25px;
+	width: 200px;
+	height: 625px;
+	box-shadow: -0px 0px 7px 7px rgb(144, 226, 246, 0.7);
+	border-radius: 10px;
+	background-color: #330066;
+	opacity: 0.7;
+	position: fixed;
+	font-size: 18px;
+}
+
+aside h3 {
+	color: ghostwhite;
+	margin-left: 10px;
+}
+
+aside a {
+	color: ghostwhite;
+}
+
+aside p{
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	text-align: left;
+	color: ghostwhite;
+	padding: 3px;
+
+}
+
+aside #email {
+	margin-left: 8px;
+}
+
+aside a:hover {
+	text-shadow: -0px 0px #90E2F6;
+}
+
+/*Linkedin icon*/
+#idLinkedInIcon{
+	background-color:rgb(0, 102, 170);
+	border-radius:6px;
+	color:white;
+	cursor:pointer;
+	display:inline-block;
+	font:bold 15px Arial, Helvetica, sans-serif;
+	height:20px;
+	margin-top:1px;
+	text-align:center;
+	width:20px;
+}
+
+#idLinkedInIcon:hover {
+	background-color:#06d;
+}
+
+main {
+	margin-top: 250px;
+	margin-left: 7%;
+	height: 70%;
+	width: 80%;
+	border-radius: 10px;
+	overflow-y: scroll;
+	display: inline-block;
+	position: fixed;
+}
+
+
+
+main li {
+	margin-bottom: 2em;
+}
+
+#skills {
+	display: inline-block;
+	background-color: ghostwhite;
+	opacity: 0.9;
+	box-shadow: -0px 0px 7px 7px rgb(144, 226, 246, 0.7);
+	border-radius: 10px;
+	width: 20%;
+	height: 600px;
+	padding: 10px;
+	float:left;
+	transform: perspective(20px) rotateY(0.4deg);
+	position: relative;
+	transition: transform .5s;
+}
+
+
+
+#skills table {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#skills td{
+	padding: 20px 7px 7px 7px;
+	display: inline-block;
+}
+
+
+
+#knowledge{
+	display: inline-block;
+	background-color: ghostwhite;
+	opacity: 0.88;
+	box-shadow: -0px 0px 7px 7px rgb(144, 226, 246, 0.7);
+	border-radius: 10px;
+	width: 20%;
+	height: 560px;
+	padding: 10px;
+	float:left;
+	margin-top: 20px;
+	margin-left: 50px;
+	transform: perspective(20px) rotateY(0.15deg);
+	z-index: 6;
+	position: relative;
+	transition: transform .5s;
+}
+
+#courses {
+	display: inline-block;
+	background-color: ghostwhite;
+	opacity: 0.9;
+	box-shadow: -0px 0px 7px 7px rgb(144, 226, 246, 0.7);
+	border-radius: 10px;
+	width: 20%;
+	height: 560px;
+	padding: 10px;
+	float:left;
+	margin-top: 20px;
+	margin-left: 25px;
+	transform: perspective(20px) rotateY(-0.15deg);
+	position: relative;
+	transition: transform .5s;
+}
+
+
+#others {
+	display: inline-block;
+	background-color: ghostwhite;
+	opacity: 0.9;
+	box-shadow: -0px 0px 7px 7px rgb(144, 226, 246, 0.7);
+	border-radius: 10px;
+	width: 20%;
+	height: 602px;
+	padding: 10px;
+	float:left;
+	margin-left: 50px;
+	transform: perspective(20px) rotateY(-0.3deg);
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	position: relative;
+	transition: transform .5s;
+}
+
+
+#skills h3, #others h3 {
+	margin-top: 20px;
+	transform: perspective(20px) rotateY(0.15deg);
+	padding: 10px;
+	display: inline-block;
+}
+
+#knowledge h3, #courses h3 {
+	margin-top: 39px;
+}
+
+
+#skills:hover, #knowledge:hover {
+	transform: translateX(4em) translateY(4em) scaleX(1.25) scaleY(1.25);
+	z-index: 7;
+	opacity: 0.99;
+}
+
+#courses:hover, #others:hover {
+	transform: translateX(-4em) translateY(4em) scaleX(1.25) scaleY(1.25);
+	z-index: 7;
+	opacity: 0.99;
+}
+
+@media (min-width: 1282px) and (max-width: 1489px) {
+	header{
+		margin-left: 17%;
+	}
+
+	main {
+		margin-top: 285px;
+		margin-left: 47px;
+	}
+
+}
+
+/*****************************Medium monitor screen*******************************/
+@media screen and (max-width: 1679px) {
+	
+	body {
+		overflow-y: scroll;
+	}
+	main {
+		overflow-y: scroll;
+	}
+
+	header {
+		margin-right: 5px;
+		width: auto;
+		height: auto;		
+	}
+
+	main li {
+		margin-bottom: 2em;
+	}
+
+
+	#skills {
+		height: 795px;
+	}
+
+	#knowledge {
+		height: 750px;
+		margin-left: 40px;
+	}
+
+	#courses {
+		height: 751px;
+	}
+
+	#others {
+		height: 795px;
+		margin-left: 40px;
+	}
+
+
+
+/***************************Tablet************************************/
+@media screen and (max-width: 1281px) {
+	html {
+		background-repeat: repeat-y;
+
+	}
+
+	#profilimg {
+		margin-left: 0px;
+		margin-right: 60px;
+		margin-top: 0px;
+		width: 9.7em; /*widht: 150px;height: 150px*/
+		box-shadow: -0px 0px 3px 3px #90E2F6;
+		transition: transform .3s;
+		display: inline-block;
+		float: left;
+	}
+
+	#profilimg:hover {
+		transform: translateX(4em) translateY(4em) scaleX(1.5) scaleY(1.5);
+		z-index: 7;
+		opacity: 0.99;
+	}
+
+	body {
+		margin: 0px;
+		display: inline-block;
+		overflow-y: unset;
+		opacity: 1;
+	}
+
+	header {
+		margin: 0.4% 0.7% 0% 0.2%;
+		border-bottom-left-radius: 15px;
+		border-top-left-radius: 15px;
+		border-bottom-right-radius: 0px;
+		border-top-right-radius: 0px;
+		opacity: 1;
+		width: 100vw;
+		height: auto;
+		box-shadow: -0px 0px 3px 3px #90E2F6;
+		transition: top 0.3s;
+		display: flow;
+		position: relative;
+	}
+
+
+
+	header p {
+		margin-right: 5px;
+		padding-right: 15px;
+		padding-bottom: 5px;
+		text-align: justify;
+	}
+
+	aside {
+		margin-top: 0.4%;
+		margin-left: 0.4%;
+		width: 100vw;
+		height: auto;
+		box-shadow: -0px 0px 3px 3px #90E2F6;
+		border-radius: 15px;
+		opacity: 1;
+		font-size: 18px;
+		transition: top 0.3s;
+		position: sticky;
+		display: flow-root;
+	}
+
+
+
+	main {
+		margin-top: 0em;
+		margin-left: 1px;
+		margin-right:1px;
+		height: 620px;
+		width: 99.7%;
+		border-radius: 10px;
+		position: relative;
+		overflow-y: unset;
+		height: auto;
+	}
+
+	main ul {
+		width: 100%;
+		margin-left: 30px;
+		padding: 0;
+	}
+
+	
+
+	main li {
+		text-align: left;
+		
+	}
+
+	#skills {
+		margin-top: 0.4%;
+		display: flow;
+		background-color: ghostwhite;
+		box-shadow: -0px 0px 3px 3px #90E2F6;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		width: 100%;
+		height: 500px;
+		float:top;
+		transition: .5s;
+		transform: none;
+		position: relative;
+		z-index: -1;
+		opacity: 0.96;
+	}
+
+	#skills table {
+		display: inline-block;
+		width: auto;
+	}
+
+	#skills tr {
+		display: inline-block;
+	}
+
+	#skills td{
+		display: inline-block;
+		padding: 0;
+	}
+
+
+
+	#knowledge{
+		display: flow;
+		background-color: ghostwhite;
+		box-shadow: -0px 0px 3px 3px #90E2F6;
+		border-radius: 10px;
+		width: 100%;
+		height: 400px;
+		padding: 10px;
+		float: left;
+		margin-top: 0px;
+		margin-left: 0px;
+		transform: none;
+		postion: relative;
+		transition: transform .5s;
+		opacity: 0.94;
+	}
+
+	/*#knowledge ul > li::before {
+		content: '\a';
+		white-space: pre;
+	}*/
+
+	#courses {
+		display: flow;
+		background-color: ghostwhite;
+		box-shadow: -0px 0px 3px 3px #90E2F6;
+		border-radius: 10px;
+		width: 100%;
+		padding: 10px;
+		float:left;
+		height: 250px;
+		margin-top:  0px;
+		margin-left: 0px;
+		transform: none;
+		position: relative;
+		transition: transform .5s;
+		opacity: 0.96;
+	}
+
+	
+
+	#others {
+		display: flow;
+		background-color: ghostwhite;
+		box-shadow: -0px 0px 3px 3px #90E2F6;
+		border-radius: 10px;
+		width: 100%;
+		height: auto;
+		padding: 10px;
+		float:left;
+		margin-left: 0px;
+		transform: none;
+		font-family: Verdana, sans-serif;
+		font-size: 14px;
+		position: relative;
+		transition: transform .5s;
+		margin-top: 0px;
+		opacity: 0.96;
+	}
+
+
+	#skills h3, #others h3 {
+		margin-top: 40px;
+		transform: perspective(20px) rotateY(0.15deg);
+		padding: 10px;
+		display: inline-block;
+	}
+
+	#knowledge h3, #courses h3 {
+		margin-top: 39px;
+	}
+
+
+	#skills:hover, #knowledge:hover, #courses:hover, #others:hover {
+		pointer-events: none;
+	}
+
+}
+
+
+/*****************************************Mobile*******************************************************/
+@media screen and (max-width: 600px) {
+	
+	
+
+	body {
+		font-size: 12px;
+	}
+
+
+	aside {
+		font-size: 12px;
+	}
+		
+	
+
+
+	#skills h3, #knowledge h3, #courses h3, #others h3 {
+		margin-top: 10px;
+	}
+
+	#skills ul, #knowledge ul, #courses ul, #others ul {
+		margin-left: 1em;
+		width: 80%;
+	}
+
+	#courses, #others {
+		z-index: 3;
+	}
+
+	#profilimg:hover, #skills:hover, #knowledge:hover, #courses:hover, #others:hover {
+		pointer-events: none;
+	}
+
+
+}
+
+/******************************Little mobile************************/
+
+@media screen and (max-width: 326px) {
+	aside {
+		font-size: 10px;
+	}
+
+	header {
+		margin-top: 0em;
+		z-index: unset;
+		
+	}
+
+	header, #skills, #knowledge, #courses, #others {
+		z-index: unset;
+		position: static;
+	}
+}
+
+
