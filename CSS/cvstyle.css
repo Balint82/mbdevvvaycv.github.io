@@ -17,7 +17,7 @@ html {
 #profilimg {
 	margin-left: 25px;
 	margin-top: 12px;
-	width: 12.5em; /*width: 12.7em*/
+	width: 11.5em; 
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	border-top-right-radius: 20px;
@@ -54,7 +54,6 @@ header {
 
 header h2{
 	color: ghostwhite;
-	/*margin-left: 2em;*/
 	margin-top:	3em;
 	z-index: 6;
 	font-weight: bold;
