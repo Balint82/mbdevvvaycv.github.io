@@ -12,127 +12,118 @@
 </head>
 
 <body>
-        <img id="profilimg" src="img/profiloc.jpg" alt="profil kep">
-       
-        <header>
-         <h2>Major Bálint, gyakornokjelölt - Bemutatkozó oldal</h2>
-            <p id="welcome"><b>Üdvözlöm a bemutatkozó oldalamon!<br></b></p>
-            <!--<p>Néhány szót ejtek a jelen szakmai felkészültségemről.<br>Az informatikai tanulmányom egy bootcamppel kezdődött, amit a Codecool felnőttképző iskolában végeztem Manuális teszteletőként, majd a Tesztautomatizálás tanfolyamot is elvégeztem, ahol megismerhettem és valamelyest el is mélyhedhettem az SQL nyelvben, valamint a Git verziókövető és a Jira hibakövető eszközt, a Java nyelvet objektum orientált programozás közép szintjén és Selenium automatizáló technológiát. Ez után ISTQB vizsgát tettem alapszinten.<br> Eztán kezdtem a tanulást a Pannon Egyetem üzemmérnök informatikus szakán, ahol betekintést nyerhettem Linux rendszergazdai ismeretekbe, hálózati ismeretekbe tanárom személyes óraadásának és az iskola által biztosított Cisco internetes kurzusokon keresztül és egyéb tantárgyakon keresztül amelyek további alapot és rálátást biztosítanak a szakmára. Az ismert technológiák alatt található  JavaScript és PHP ismereteim alapszintűek, az iskolai tananyag elsajátítása miatti időkapacitás beosztása eredményeként, ezekben a nyelvekben a képzés befejezése után szeretnék elmélyedni, az angol tudásom fejlesztése ugyanezen okból folyamatban van. HTML, CSS, C, C++ nyelvet átfogóan megismertem.</br>Köszönöm, hogy elolvasta a szakmai bemutatkozásomat.-->
-            </b>
-         </p>
-        </header>
-        
-        <aside>
-            <h3><u>Elérhetőségek</u></h3>
-            <p>📧<a id="email" href="mailto:major.balint82@gmail.com">major.balint82@&#8203;gmail&#8203;.com</a></p>
-            <p><div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.scrapersnbots.com/blog/general/how-to-add-linkedin-icon-in-html.php');" title="How to Add LinkedIn Icon in HTML">in</div><p> <a href="https://www.linkedin.com/in/balint-major-dev-way/">Linkedin profil</a></p>
-            <p><a href="https://github.com/Balint82">🐈‍⬛ Github oldal</a></p>
-            <p><strong>&#9743; </strong>+36501093746</p>
-        </aside>
+    <!-- Nyelvválasztó menü -->
+    <div class="language-selector">
+        <select id="language-switcher" onchange="switchLanguage()">
+            <option value="hu" data-flag="img/flags/hu.png">🇭🇺 Magyar</option>
+            <option value="en" data-flag="img/flags/gb.png">🇬🇧 English</option>
+        </select>
+    </div>
 
-        <main> 
-            <div class="descs" id="skills" >
-                <h3>Ismert technológiák:</h3>
-                <ul>
-                    <li>C, C++, .NET, C#</li>
-                    <li>Java, Android studio</li>
-                    <li>HTML5, CSS</li>  
-                    <li>MySql, Sqllite, MSSMS</li>
-                    <li>Linux</li> 
-                    <li>GIT, JIRA, Office, Selenium</li> 
-                </ul>
-                <br>
-                <table>
-                    <tr>
-                        <td><img src="img/icon/html.png" width="50px"></td>
-                        <td><img src="img/icon/css.png" width="50px"></td>
-                        <td><img src="img/icon/javascript.png" width="50px"></td>
-                        <td><img src="img/icon/php.png" width="50px"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/icon/c-document.png" width="50px"></td>
-                        <td><img src="img/icon/c-.png" width="50px"></td>
-                        <td><img src="img/icon/java(1).png" width="50px"></td>
-                        <td><img src="img/icon/jira.png" width="50px"></td>
-                    </tr>
-                </table>
-            </div> 
-            <div class="descs" id="knowledge" >
-                <h3>Tanulmányok:</h3>
-                <ul>
-                    <li>
-                        2021 
-                        Pannon Egyetem 
-                        üzemmérnök informatikus Bprof 
-                        [jelenleg 3. éves hallgató]
-                    </li>
-                    <li>
-                        2006 – 2009 
-                        Miskolci Egyetem 
-                        szociólioga szak BA
-                    </li>
-                    <li>
-                        2003 – 2005 
-                        Berzsenyi Dániel Főiskola 
-                        Intézményi kommunikáció szak
-                    </li>
-                    <li>    
-                        2001 – 2003 
-                        Zsigmondy-Széchenyi 
-                        Szakközép Iskola, 
-                        Mélyfúróipari Technikum
-                    </li>
-                    <li>
-                        1999 – 2001  
-                        Zsigmondy-Széchenyi 
-                        Szakközép Iskola
-                    <li>
-                        1997 – 1999 
-                        Cserháti Sándor Szakközép Iskola
-                    </li>
-                </ul>
-            </div>
-            <div class="descs" id="courses" >
-                <h3>Kurzusok:</h3>
-                <ul>
-                    <li>
-                        ISTQB Tanúsítvány - alapfok
-                    </li>    
-                    <li>
-                        2021 Junior automata tesztelő 
-                        [Bootcamp]
-                    </li>
-                    <li>
-                        2020 – 2021 Junior Manuális 
-                        tesztelő [Bootcamp]
-                </ul>
-            </div>
-            <div class="descs" id="others">
-                <h3>Egyéb információk:</h3>
-                <h4>Nyelv:</h4>
-                <ul>
-                    <li>
-                        Német - Középfok
-                    </li>
-                    <li>
-                        Angol - Társalgási szint
-                    </li>
-                </ul>
-                <h4>Jogosítvány:</h4>
-                <ul>
-                    <li>B2</li>
-                </ul>
+    <img id="profilimg" src="img/profiloc.jpg" alt="profil kep">
+    
+    <header>
+        <h2 data-lang-hu="Major Bálint, gyakornokjelölt - Bemutatkozó oldal" data-lang-en="Bálint Major, Intern Candidate - Introduction Page">Major Bálint, gyakornokjelölt - Bemutatkozó oldal</h2>
+        <p id="welcome" data-lang-hu="Üdvözlöm a bemutatkozó oldalamon!" data-lang-en="Welcome to my introduction page!"><b>Üdvözlöm a bemutatkozó oldalamon!<br></b></p>
+    </header>
+    
+    <aside>
+        <h3 data-lang-hu="Elérhetőségek" data-lang-en="Contacts"><u>Elérhetőségek</u></h3>
+        <p>📧<a id="email" href="mailto:major.balint82@gmail.com">major.balint82@&#8203;gmail&#8203;.com</a></p>
+        <p><div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.scrapersnbots.com/blog/general/how-to-add-linkedin-icon-in-html.php');" title="How to Add LinkedIn Icon in HTML">in</div><p> <a href="https://www.linkedin.com/in/balint-major-dev-way/" data-lang-hu="LindkedIn profil" data-lang-en="LinkedIn profile">LinkedIn profil</a></p>
+        <p><a href="https://github.com/Balint82" data-lang-hu="🐈‍⬛Github oldal" data-lang-en="🐈‍⬛Github page">🐈‍⬛Github oldal</a></p>
+        <p><strong>&#9743; </strong>+36501093746</p>
+    </aside>
 
-                <h4>Szabadidős tevékenységek:</h4>
-                <ul>
-                    <li>Olvasás, Film nézés</li>
-                    <li>Biciklizés</li>
-                    <li>Gitározás</li>
-                    <li>Rajzolás</li>
-                    <li>Tanulás</li>
-                    <li>Kertészkedés</li>
-                </ul>
-            </div>
+    <main> 
+        <div class="descs" id="skills" >
+            <h3 data-lang-hu="Ismert technológiák:" data-lang-en="Known Technologies:">Ismert technológiák:</h3>
+            <ul>
+                <li>C, C++, .NET, C#</li>
+                <li>Java, Android studio</li>
+                <li>HTML5, CSS</li>  
+                <li>MySql, Sqllite, MSSMS</li>
+                <li>Linux</li> 
+                <li>GIT, JIRA, Office, Selenium</li> 
+            </ul>
+            <br>
+            <table>
+                <tr>
+                    <td><img src="img/icon/html.png" width="50px"></td>
+                    <td><img src="img/icon/css.png" width="50px"></td>
+                    <td><img src="img/icon/javascript.png" width="50px"></td>
+                    <td><img src="img/icon/php.png" width="50px"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/icon/c-document.png" width="50px"></td>
+                    <td><img src="img/icon/c-.png" width="50px"></td>
+                    <td><img src="img/icon/java(1).png" width="50px"></td>
+                    <td><img src="img/icon/jira.png" width="50px"></td>
+                </tr>
+            </table>
+        </div> 
+        <div class="descs" id="knowledge" >
+            <h3 data-lang-hu="Tanulmányok:" data-lang-en="Studies:">Tanulmányok:</h3>
+            <ul>
+                <li data-lang-hu="2021 Pannon Egyetem üzemmérnök informatikus Bprof [jelenleg 3. éves hallgató]" data-lang-en="2021 Pannon University Information Engineering BProf [currently 3rd year student]">
+                    2021 Pannon Egyetem üzemmérnök informatikus Bprof [jelenleg 3. éves hallgató]
+                </li>
+                <li data-lang-hu="2006 – 2009 Miskolci Egyetem szociológia szak BA" data-lang-en="2006 – 2009 University of Miskolc Sociology BA">
+                    2006 – 2009 Miskolci Egyetem szociológia szak BA
+                </li>
+                <li data-lang-hu="2003 – 2005 Berzsenyi Dániel Főiskola Intézményi kommunikáció szak" data-lang-en="2003 – 2005 Berzsenyi Dániel College Institutional Communication">
+                    2003 – 2005 Berzsenyi Dániel Főiskola Intézményi kommunikáció szak
+                </li>
+                <li data-lang-hu="2001 – 2003 Zsigmondy-Széchenyi Szakközép Iskola, Mélyfúróipari Technikum" data-lang-en="2001 – 2003 Zsigmondy-Széchenyi Vocational School, Deep Drilling Technician">
+                    2001 – 2003 Zsigmondy-Széchenyi Szakközép Iskola, Mélyfúróipari Technikum
+                </li>
+                <li data-lang-hu="1999 – 2001 Zsigmondy-Széchenyi Szakközép Iskola" data-lang-en="1999 – 2001 Zsigmondy-Széchenyi Vocational School">
+                    1999 – 2001 Zsigmondy-Széchenyi Szakközép Iskola
+                <li data-lang-hu="1997 – 1999 Cserháti Sándor Szakközép Iskola" data-lang-en="1997 – 1999 Cserháti Sándor Vocational School">
+                    1997 – 1999 Cserháti Sándor Szakközép Iskola
+                </li>
+            </ul>
+        </div>
+        <div class="descs" id="courses" >
+            <h3 data-lang-hu="Kurzusok:" data-lang-en="Courses:">Kurzusok:</h3>
+            <ul>
+                <li data-lang-hu="ISTQB Tanúsítvány - alapfok" data-lang-en="ISTQB Certificate - Basic">
+                    ISTQB Tanúsítvány - alapfok
+                </li>    
+                <li data-lang-hu="2021 Junior automata tesztelő [Bootcamp]" data-lang-en="2021 Junior Automated Tester [Bootcamp]">
+                    2021 Junior automata tesztelő [Bootcamp]
+                </li>
+                <li data-lang-hu="2020 – 2021 Junior Manuális tesztelő [Bootcamp]" data-lang-en="2020 – 2021 Junior Manual Tester [Bootcamp]">
+                    2020 – 2021 Junior Manuális tesztelő [Bootcamp]
+            </ul>
+        </div>
+        <div class="descs" id="others">
+            <h3 data-lang-hu="Egyéb információk:" data-lang-en="Other Information:">Egyéb információk:</h3>
+            <h4 data-lang-hu="Nyelv:" data-lang-en="Languages:">Nyelv:</h4>
+            <ul>
+                <li data-lang-hu="Német - Középfok" data-lang-en="German - Intermediate">
+                    Német - Középfok
+                </li>
+                <li data-lang-hu="Angol - Társalgási szint(fejlesztése folyamatban)" data-lang-en="English - Conversational(under development)">
+                    Angol - Társalgási szint(fejlesztése folyamatban)
+                </li>
+            </ul>
+            <h4 data-lang-hu="Jogosítvány:" data-lang-en="Driving License:">Jogosítvány:</h4>
+            <ul>
+                <li data-lang-hu="B2" data-lang-en="B2">B2</li>
+            </ul>
+
+            <h4 data-lang-hu="Szabadidős tevékenységek:" data-lang-en="Hobbies:">Szabadidős tevékenységek:</h4>
+            <ul>
+                <li data-lang-hu="Olvasás, Film nézés" data-lang-en="Reading, Watching Movies">Olvasás, Film nézés</li>
+                <li data-lang-hu="Biciklizés" data-lang-en="Cycling">Biciklizés</li>
+                <li data-lang-hu="Gitározás" data-lang-en="Playing Guitar">Gitározás</li>
+                <li data-lang-hu="Rajzolás" data-lang-en="Drawing">Rajzolás</li>
+                <li data-lang-hu="Tanulás" data-lang-en="Studying">Tanulás</li>
+                <li data-lang-hu="Kertészkedés" data-lang-en="Gardening">Kertészkedés</li>
+            </ul>
+        </div>
+    </main>
         </main>
     <script src="JS/cvscript.js"></script>        
     </body>

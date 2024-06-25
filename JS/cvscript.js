@@ -14,3 +14,17 @@
         
             window.addEventListener('resize', moveImage);
         });
+
+
+function switchLanguage() {
+    var lang = document.getElementById('language-switcher').value;
+    var elements = document.querySelectorAll('[data-lang-hu], [data-lang-en]');
+
+    elements.forEach(function(element) {
+        if (lang === 'hu') {
+            element.innerText = element.getAttribute('data-lang-hu');
+        } else {
+            element.innerText = element.getAttribute('data-lang-en');
+        }
+    });
+}
